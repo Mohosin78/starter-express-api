@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authenticate</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <style>
+      body {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("image/login-page-background.jpg");
+      }
+      a,
+      small {
+        color: blue;
+        font-size: 0.65rem;
+        text-decoration: underline;
+      }
+      .container {
+        width: 18rem;
+        padding: 0.5rem;
+        background: #fff;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.1rem 3rem 5rem #ffffff26;
+      }
+      .btn-sc {
+        --btn-cl: #fff;
+        --btn-bg: #198754;
+      }
+      .btn-sc:hover {
+        --btn-br: #157347;
+      }
+      .btn-sc:focus {
+        box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, 0.5);
+      }
+    </style>
+  </head>
+  <body class="dfx">
+    <div class="container dfx a">
+      <br />
+      <h2>Authenticate</h2>
+      <br /><label for="username" class="inp-lab"
+        ><input
+          type="text"
+          id="username"
+          class="inp"
+          oninput="faac(this)"
+          value=""
+          required
+        /><span>Username</span></label
+      ><br /><label for="password" class="inp-lab"
+        ><input
+          type="text"
+          id="password"
+          class="inp"
+          oninput="faac(this)"
+          value=""
+          required
+        /><span>Password</span></label
+      ><br /><button class="btn-sc" onclick="$request()">Submit</button><br />
+      <br />
+    </div>
+    <script src="js/reqts.js" defer></script>
+    <script src="js/sctr.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/login.js" defer></script>
+  </body>
+</html>
