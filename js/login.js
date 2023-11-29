@@ -1,0 +1,1 @@
+function $request(){let e=$("#username").value.trim(),a=$("#password").value.trim();if(!e||!a)return alert("Login Error"),0;$get({url:"/authenticate?user="+e+"&&pass="+a}).then((e=>{(e=JSON.parse(e)).status?(window.location="/",sessionStorage.setItem("client",e.token)):alert(e.message)})).catch((e=>{}))}window.onload=()=>{faac($("#username")),faac($("#password"))};
