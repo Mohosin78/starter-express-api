@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "install": "npm install",
+    "start": "npm install;node index.js"
   },
   "keywords": [],
   "author": "Md.Mohosin Ali",
