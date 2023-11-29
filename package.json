@@ -6,7 +6,7 @@
   "scripts": {
     "install": "npm install",
     "start": "npm install;node index.js",
-    "build": "npm install;node index.js",
+    "build": "npm install;node index.js"
   },
   "keywords": [],
   "author": "Md.Mohosin Ali",
