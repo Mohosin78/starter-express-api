@@ -118,7 +118,7 @@ function getDataFromServer() {
 
 window.onload = () => {
   __url = window.location.host;
-  let _type = window.location.protocol == "http:" ? "ws" : "wss";
+  let _type = window.location.protocol == "http:" ? "ws" : "ws";
   __ws__url = _type + "://" + __url + "/";
   ws = new WebSocket(__ws__url);
 
