@@ -1,1 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+button {
+  width: 100%;
+  display: flex;
+  outline: none;
+  padding: 0.25rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  align-items: center;
+  color: var(--btn-cl);
+  --btn-br: transparent;
+  justify-content: center;
+  border-radius: 0.25rem;
+  background: var(--btn-bg);
+  border: 0.15rem solid var(--btn-br);
+}
+
+button img {
+  height: auto;
+  display: none;
+  width: 1.5rem;
+}
+
+.btn-pr {
+  --btn-cl: #fff;
+  --btn-bg: #0d6efd;
+}
+
+.btn-pr:hover {
+  --btn-br: #0a58ca;
+}
+
+.btn-pr:focus {
+  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+}
+
+.btn-sc {
+  --btn-cl: #fff;
+  --btn-bg: #198754;
+}
+
+.btn-sc:hover {
+  --btn-br: #157347;
+}
+
+.btn-sc:focus {
+  box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, 0.5);
+}
+
+.btn-wr {
+  --btn-cl: #000;
+  --btn-bg: #ffc107;
+}
+
+.btn-wr:hover {
+  --btn-br: #ffc107;
+}
+
+.btn-wr:focus {
+  box-shadow: 0 0 0 0.25rem rgba(217, 164, 6, 0.5);
+}
+.dfx {
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dfx.a {
+  flex-direction: column;
+}
+
+.dfx.g {
+  gap: 0;
+}
+
+.inp {
+  width: 100%;
+  outline: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  border: 0.25rem solid #f5f0f0;
+}
+
+.inp:hover {
+  border: 0.25rem solid rgba(49, 131, 253, 0.323);
+}
+
+.inp:focus {
+  border: 0.25rem solid rgba(49, 132, 253, 0.5);
+}
+
+.inp-lab {
+  width: 100%;
+  position: relative;
+}
+
+.inp-lab span {
+  top: 0.5rem;
+  left: 0.5rem;
+  background: #fff;
+  position: absolute;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+  padding: 0.2rem 0.35rem;
+  transition: top 0.2s ease-in-out;
+}
+
+.inp:focus ~ span,
+.inp-lab span.active {
+  top: -0.6rem;
+}
